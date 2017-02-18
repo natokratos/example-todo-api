@@ -4,7 +4,7 @@ node('php'){
         sh 'ls -la'
     }
     stage('fetch') {
-        git 'https://github.com/jeffersonsouza/example-todo-api.git'
+        git 'https://github.com/natokratos/example-todo-api.git'
     }
     stage('build'){
         sh 'composer install --prefer-dist --no-dev --ignore-platform-reqs'
